@@ -34,7 +34,7 @@ countWatchingFilms();
 function gradeWatchingFilms(){
     for( let i = 0; i < 2; i++){
 
-        let lastFilmWatching = prompt("Один из последних просмотренных фильмов", "");
+        let lastFilmWatching = prompt("Один из последних просмотренных фильмов", "").trim;
         let grade = prompt("На сколько его оцените", "");
         if( lastFilmWatching == ' ' || grade === ' ' || lastFilmWatching === null || grade === null || lastFilmWatching.length > 50){
             i--;
